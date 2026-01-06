@@ -59,7 +59,8 @@ pre {
     margin-right: 7px;
 }
 .contact {
-	background-color: #f8f8f8;
+	/* background-color: #f8f8f8; <-- oryginalny */
+	background-color: #E5F2FD;
 	padding: 5em 0em;
 }
 .contact h1 {
@@ -79,7 +80,8 @@ pre {
 }
 
 .social-contact-icon {
-	background-color: #f2f3f4;
+	/* background-color: #f2f3f4; <-- oryginalny */
+	background-color: #E5F2FD;
 }
 .fa {
 	margin-right: 10px;
@@ -185,7 +187,8 @@ pre {
 
 .icon.style2.fa-facebook {
 
-	background-color: #4071bb;
+	background-color: #046DC5;
+	/* background-color: #4071bb; <-- oryginal */
 }
 .icon.style2.fa-twitter {
 
@@ -193,7 +196,8 @@ pre {
 }
 .icon.style2.fa-instagram {
 
-	background-color: #FA6AA2;
+	background-color: #046DC5;
+	/* background-color: #FA6AA2; <-- oryginal */
 }
 .icon.style2.fa-dribbble {
 
@@ -233,7 +237,8 @@ pre {
 }
 .icon.style2.fa-youtube {
 
-	background-color: #f14603;
+	background-color: #046DC5;
+	/* background-color: #f14603; <-- oryginal */
 }
 
 .right-color {
@@ -292,8 +297,10 @@ pre {
 
 				.header .logo .symbol img {
 					display: block;
-					width: 3.2em;
-					height: 2.5em;
+					width: 6.4em;
+					height: 5em;
+					/*width: 3.2em; 	<-- oryginalne */
+					/*height: 2.5em;	<-- oryginalne */
 				}
 
 
@@ -462,7 +469,8 @@ button[disabled], html input[disabled] {
 }
 .btn-send-2 {
 	padding: 18px 60px;
-    background-color: #333;
+    /* background-color: #333; <--oryginalny */
+    background-color: #046DC5;
     color: #fff;
     margin-top: 10px;
 }
@@ -494,7 +502,8 @@ button[disabled], html input[disabled] {
 		max-width: 80%;
 		height: 100%;
 		-webkit-overflow-scrolling: touch;
-		background: #333;
+		background: #046DC5;
+		/* background: #333; <-- oryginal */
 		color: #ffffff;
 		cursor: default;
 		visibility: hidden;
@@ -685,7 +694,8 @@ button[disabled], html input[disabled] {
 #open-popup {padding:20px}
 .white-popup {
   position: relative;
-  background: #FFF;
+  background: #046DC5;
+  /* background: #FFF; <-- oryginal */
   width: auto;
   max-width: 1150px;
 }
@@ -725,28 +735,36 @@ button[disabled], html input[disabled] {
 	opacity: 0;
 }
 .a a .img-hover.glass {
-    background: #ea766a;
+    background: #046DC5;
+    /* background: #ea766a; <-- oryginal */
 }
 .a a .img-hover.shoes-glass {
-    background: #a0c4a3;
+    background: #046DC5;
+    /* background: #a0c4a3; <-- oryginal */
 }
 .a a .img-hover.hand-parts {
-    background: #da9dd9;
+    background: #046DC5;
+    /* background: #da9dd9; <-- oryginal */
 }
 .a a .img-hover.table-with-phone {
-    background: #6da178;
+    background: #046DC5;
+    /* background: #6da178; <-- oryginal */
 }
 .a a .img-hover.orange-shoe {
-    background: #da9567;
+    background: #046DC5;
+    /* background: #da9567; <-- oryginal */
 }
 .a a .img-hover.glass-shoes {
-    background: #5dc6aa;
+    background: #046DC5;
+    /* background: #5dc6aa; <--oryginal */
 }
 .a a .img-hover.girls-tops {
-    background: #cab0a6;
+    background: #046DC5;
+    /* background: #cab0a6; <-- oryginal */
 }
 .a a .img-hover.egg-arts {
-    background: #ddd173;
+    background: #046DC5;
+    /* background: #ddd173; <-- oryginal */
 }
 .a a .img-hover .c-table {
 	display: table;
