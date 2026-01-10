@@ -737,42 +737,42 @@ button[disabled], html input[disabled] {
 	opacity: 0;
 }
 .a a .img-hover.glass {
-    background: #F6511D;
+    background: #F6511D;    /* <-- red */
     /* background: #046DC5; <-- LECH theme */
     /* background: #ea766a; <-- oryginal */
 }
 .a a .img-hover.shoes-glass {
-    background: #0D2C54;
+    background: #0D2C54;    /* <-- dark blue */
     /* background: #046DC5; <-- LECH theme */
     /* background: #a0c4a3; <-- oryginal */
 }
 .a a .img-hover.hand-parts {
-    background: #00A6ED;
+    background: #7FB800;    /* <-- light green */
     /* background: #046DC5; <-- LECH theme */
     /* background: #da9dd9; <-- oryginal */
 }
 .a a .img-hover.table-with-phone {
-    background: #FFB400;
+    background: #00A6ED;    /* <-- light blue */
     /* background: #046DC5; <-- LECH theme */
     /* background: #6da178; <-- oryginal */
 }
 .a a .img-hover.orange-shoe {
-    background: #7FB800;
+    background: #FFB400;    /* <-- yellow */
     /* background: #046DC5; <-- LECH theme */
     /* background: #da9567; <-- oryginal */
 }
 .a a .img-hover.glass-shoes {
-    background: #7FB800;
+    background: #F6511D;    /* <-- red */
     /* background: #046DC5; <-- LECH theme */
     /* background: #5dc6aa; <--oryginal */
 }
 .a a .img-hover.girls-tops {
-    background: #0D2C54;
+    background: #7FB800;    /* <-- light green */
     /* background: #046DC5; <-- LECH theme */
     /* background: #cab0a6; <-- oryginal */
 }
 .a a .img-hover.egg-arts {
-    background: #F6511D;
+    background: #0D2C54;    /* <-- dark blue */
     /* background: #046DC5; <-- LECH theme */
     /* background: #ddd173; <-- oryginal */
 }
