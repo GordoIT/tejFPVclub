@@ -196,7 +196,8 @@ pre {
 }
 .icon.style2.fa-instagram {
 
-	background-color: #046DC5;
+	background-color: #E1306C;
+	/* background-color: #046DC5; <-- LECH theme */
 	/* background-color: #FA6AA2; <-- oryginal */
 }
 .icon.style2.fa-dribbble {
@@ -237,7 +238,8 @@ pre {
 }
 .icon.style2.fa-youtube {
 
-	background-color: #046DC5;
+	background-color: #FF0000;
+	/* background-color: #046DC5; <-- LECH theme */
 	/* background-color: #f14603; <-- oryginal */
 }
 
@@ -735,35 +737,43 @@ button[disabled], html input[disabled] {
 	opacity: 0;
 }
 .a a .img-hover.glass {
-    background: #046DC5;
+    background: #F6511D;
+    /* background: #046DC5; <-- LECH theme */
     /* background: #ea766a; <-- oryginal */
 }
 .a a .img-hover.shoes-glass {
-    background: #046DC5;
+    background: #0D2C54;
+    /* background: #046DC5; <-- LECH theme */
     /* background: #a0c4a3; <-- oryginal */
 }
 .a a .img-hover.hand-parts {
-    background: #046DC5;
+    background: #00A6ED;
+    /* background: #046DC5; <-- LECH theme */
     /* background: #da9dd9; <-- oryginal */
 }
 .a a .img-hover.table-with-phone {
-    background: #046DC5;
+    background: #FFB400;
+    /* background: #046DC5; <-- LECH theme */
     /* background: #6da178; <-- oryginal */
 }
 .a a .img-hover.orange-shoe {
-    background: #046DC5;
+    background: #7FB800;
+    /* background: #046DC5; <-- LECH theme */
     /* background: #da9567; <-- oryginal */
 }
 .a a .img-hover.glass-shoes {
-    background: #046DC5;
+    background: #7FB800;
+    /* background: #046DC5; <-- LECH theme */
     /* background: #5dc6aa; <--oryginal */
 }
 .a a .img-hover.girls-tops {
-    background: #046DC5;
+    background: #0D2C54;
+    /* background: #046DC5; <-- LECH theme */
     /* background: #cab0a6; <-- oryginal */
 }
 .a a .img-hover.egg-arts {
-    background: #046DC5;
+    background: #F6511D;
+    /* background: #046DC5; <-- LECH theme */
     /* background: #ddd173; <-- oryginal */
 }
 .a a .img-hover .c-table {
@@ -833,7 +843,7 @@ li.popup-socials-icons {
 
 	background-color: #4071bb;
 }
-.pop-up.fa-twitter {
+..fa-twitter {
 
 	background-color: #27c7f5;
 }
