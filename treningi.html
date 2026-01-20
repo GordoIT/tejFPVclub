@@ -28,7 +28,7 @@
 									<img src="images/nav_icon.svg" class="img-responsive" alt="Collapsable Navbar">
 								</a>
 								<a href="index.html" class="logo">
-									<span class="symbol"><img src="images/tejfpv_blue_logo.png" alt="Title" /></span><span class="title">Tej FPV - poznański klub miłośników dronów FPV</span>
+									<span class="symbol"><img src="images/tejfpv_blue_logo_2.png" alt="Title" /></span><span class="title">Tej FPV - poznański klub miłośników dronów FPV</span>
 								</a>
 							</div>
 						</header>
@@ -39,7 +39,7 @@
 								<li><a href="index.html">Home</a></li>
 								<li><a href="druk_3d.html">Druk 3D</a></li>
 								<li><a href="treningi.html">Treningi</a></li>
-								<li><a href="klubowicze_tej.html">Klubowicze</a></li>
+								<li><a href="klubowicze2.html">Klubowicze</a></li>
 							</ul>
 						</nav>
 					</div>
@@ -47,10 +47,12 @@
 			</div>
 		</section>
 
+
+		<button id="theme-toggle"></button>
 		<div class="container">
 			
 			<section class="paragraph">
-				<br>
+				<p><br>UWAGA! Zapisy na treningi otwieramy na trzy lub dwa dni przed planowanym terminem.</p>
 				<h1>Treningi sekcji Tiny Whoop - Parkowo</h1>
 				
 				<!-- Cal inline embed code begins -->
@@ -133,6 +135,22 @@
 		<script src="assets/js/jquery.magnific-popup.min.js"></script>
 
 		<script src="assets/js/script.js"></script>
+
+                <script>
+                        const toggle = document.getElementById("theme-toggle");
+
+                        if (localStorage.getItem("theme") === "dark") {
+                                document.body.classList.add("dark");
+                        }
+
+                        toggle.addEventListener("click", () => {
+                                document.body.classList.toggle("dark");
+                                localStorage.setItem(
+                                        "theme",
+                                        document.body.classList.contains("dark") ? "dark" : "light"
+                                );
+                        });
+                </script>
 		
 		<!--  ===== Scroll to Top ====  -->
 		<script>
