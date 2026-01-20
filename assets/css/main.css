@@ -892,6 +892,7 @@ li.popup-socials-icons {
 			text-align: center;
 			line-height: 45px;
 			color: inherit;
+			color: inherit;
 			border-radius: 100%;
 		}
 .pop-up.fa-facebook {
@@ -910,7 +911,7 @@ li.popup-socials-icons {
 
 	background-color: #f14603;
 }
-.icon.pop-up {
+.icon.pop-up 
 				font-size: 1.0em;
 				color: #ffffff;
 			}

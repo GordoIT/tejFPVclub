@@ -18,6 +18,7 @@
   z-index: 1043;
   position: fixed;
   outline: none !important;
+  color: #333333; /* <-- dodałem żeby kolor tekstu był zawsze czarny (nawet przy zmianie tryby */
   -webkit-backface-visibility: hidden; }
 
 .mfp-container {
