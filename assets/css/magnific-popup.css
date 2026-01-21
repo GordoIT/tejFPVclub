@@ -350,3 +350,9 @@ img.mfp-img {
   .mfp-container {
     padding-left: 6px;
     padding-right: 6px; } }
+
+
+#theme-toggle {
+    background: red !important;
+}
+

@@ -13,9 +13,50 @@
 		<link rel="stylesheet" href="assets/css/magnific-popup.css">
 
 		<link rel="stylesheet" type="text/css" href="assets/css/main.css">
+
+		<style>
+		#theme-toggle {
+		  background: red;
+		  padding: 12px 20px;
+		  min-width: 120px;
+
+		  color: #fff;
+		  border: none;
+		  border-radius: 22px;
+
+		  font-size: 14px;
+		  font-weight: 600;
+		  letter-spacing: 1px;
+
+		  cursor: pointer;
+		}
+
+		body.dark #theme-toggle {
+		  background: #222;
+		  color: #fff;
+		}
+		</style>
+
+
 	</head>
 
 	<body>
+		<!--
+		<button
+		  id="theme-toggle"
+		  aria-label="Toggle dark / light mode"
+		  style="
+		    position: fixed !important;
+		    top: 200px !important;
+		    left: 20px !important;
+		    z-index: 999999 !important;
+		  "
+		>
+		  <span class="icon-sun">☀</span>
+		  <span class="icon-moon">☾</span>
+		</button>
+		-->
+
 		<!-- Wrapper -->
 		<section class="head" id="header">
 			<div class="wrapper">
@@ -53,7 +94,6 @@
 		<!-- Main -->
 
 		<section class="main-body">
-			<button id="theme-toggle"></button>
 			<div class="container">
 				<div class="row">
 					<div class="col-md-12">
@@ -441,23 +481,6 @@
 
 		<script src="assets/js/script.js"></script>
 
-		<!-- Light/Dark Mode -->
-		<script>
-			const toggle = document.getElementById("theme-toggle");
-
-			if (localStorage.getItem("theme") === "dark") {
-				document.body.classList.add("dark");
-			}
-			
-			toggle.addEventListener("click", () => {
-				document.body.classList.toggle("dark");
-				localStorage.setItem(
-					"theme",
-					document.body.classList.contains("dark") ? "dark" : "light"
-				);
-			});
-		</script>
-		<!-- -->
 
 		<!--  ===== Scroll to Top ====  -->
 	    	<script>
@@ -470,6 +493,36 @@
 			    });
 			}
 		</script>
+
+
+		<!-- Light/Dark Mode -->
+
+		<script>
+		const toggle = document.getElementById("theme-toggle");
+		const media = window.matchMedia("(prefers-color-scheme: dark)");
+
+		function setTheme(theme) {
+		    document.body.classList.toggle("dark", theme === "dark");
+		    localStorage.setItem("theme", theme);
+		}
+
+		// Initial theme
+		const saved = localStorage.getItem("theme");
+		setTheme(saved ?? (media.matches ? "dark" : "light"));
+
+		// Manual toggle
+		toggle.addEventListener("click", () => {
+		    setTheme(document.body.classList.contains("dark") ? "light" : "dark");
+		});
+
+		// System change (only if user didn’t choose)
+		media.addEventListener("change", e => {
+		    if (!localStorage.getItem("theme")) {
+			setTheme(e.matches ? "dark" : "light");
+		    }
+		});
+		</script>
+		<!-- -->
 
 	</body>
 </html>
