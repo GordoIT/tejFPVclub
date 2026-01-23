@@ -69,7 +69,7 @@ h2 {
 	font-size: 31px;
 }
 pre {
-	background-color: e4e4e4;
+	background-color: #e4e4e4;
 	border-radius: 10px;
 }
 
@@ -77,7 +77,7 @@ pre {
     border-bottom: 1px solid var(--border-light);
 }
 
-.drescription {
+.description {
 	padding-top: 2.3em;
     font-family: 'Roboto Bold', sans-serif;
     font-size: 21px;
@@ -347,7 +347,7 @@ pre {
 				}
 
 
-.unordarlist {
+.unorderedlist {
 	font-family: 'Roboto', sans-serif;
     list-style-type: square;
     font-size: bold;
@@ -899,7 +899,7 @@ li.popup-socials-icons {
 
 	background-color: #4071bb;
 }
-..fa-twitter {
+.fa-twitter {
 
 	background-color: #27c7f5;
 }
@@ -911,7 +911,7 @@ li.popup-socials-icons {
 
 	background-color: #f14603;
 }
-.icon.pop-up 
+.icon.pop-up {
 				font-size: 1.0em;
 				color: #ffffff;
 			}
@@ -999,10 +999,12 @@ textarea#message {
 @media screen and (max-width: 600px) {
 	.mfp-arrow {
 	top: 56%;
+	}
 }
 @media screen and (min-width: 601px) {
 	.mfp-arrow {
 	top: 40%;
+	}
 }
 .mfp-content .white-popup .col-md-4 {
 	padding-right: 25px;
@@ -1066,5 +1068,16 @@ body.dark .icon-sun { display: none; }
 #theme-toggle:hover {
   transform: scale(1.05);
   box-shadow: 0 6px 18px rgba(0,0,0,0.25);
+}
+
+
+
+/* NAV ICON COLOR – FINAL FIX */
+
+
+
+.nav-icon path {
+  fill: var(--text-main);
+  transition: fill 0.3s ease;
 }
 
