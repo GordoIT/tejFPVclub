@@ -95,6 +95,10 @@ $(document).ready(function () {
 
 });
 
+
+
+
+
 /*--------------popup------------*/
 $('.open-popup-link').magnificPopup({
   type:'inline',

@@ -60,7 +60,9 @@
 		</section>
 
 
-		<button id="theme-toggle"></button>
+		<button id="theme-toggle" aria-label="Toggle theme">
+			<i class="fa fa-moon-o"></i>
+		</button>
 		<div class="container">
 			
 			<section class="paragraph">
@@ -151,33 +153,44 @@
 
 		<!-- Light/Dark Mode -->
                 
-                <script>
-                const toggle = document.getElementById("theme-toggle");
-                const media = window.matchMedia("(prefers-color-scheme: dark)");
-                  
-                function setTheme(theme) {
-                    document.body.classList.toggle("dark", theme === "dark");
-                    localStorage.setItem("theme", theme);
-                } 
+		<script>
+		document.addEventListener("DOMContentLoaded", () => {
+		  const toggle = document.getElementById("theme-toggle");
+		  if (!toggle) return;
 
-                // Initial theme
-                const saved = localStorage.getItem("theme");
-                setTheme(saved ?? (media.matches ? "dark" : "light"));
+		  const media = window.matchMedia("(prefers-color-scheme: dark)");
 
-                // Manual toggle
-                toggle.addEventListener("click", () => {
-                    setTheme(document.body.classList.contains("dark") ? "light" : "dark");
-                });
-                  
-                // System change (only if user didn’t choose)
-                media.addEventListener("change", e => {
-                    if (!localStorage.getItem("theme")) {
-                        setTheme(e.matches ? "dark" : "light");
-                    }
-                });
-                </script>
-                <!-- -->
+		  function updateIcon(theme) {
+		    toggle.innerHTML =
+		      theme === "dark"
+			? '<i class="fa fa-sun-o"></i>'
+			: '<i class="fa fa-moon-o"></i>';
+		  }
 
+		  function setTheme(theme) {
+		    document.body.classList.toggle("dark", theme === "dark");
+		    localStorage.setItem("theme", theme);
+		    updateIcon(theme);
+		  }
+
+		  // Initial theme
+		  const saved = localStorage.getItem("theme");
+		  setTheme(saved ?? (media.matches ? "dark" : "light"));
+
+		  // Manual toggle
+		  toggle.addEventListener("click", () => {
+		    setTheme(document.body.classList.contains("dark") ? "light" : "dark");
+		  });
+
+		  // React to system change ONLY if user didn't override
+		  media.addEventListener("change", e => {
+		    if (!localStorage.getItem("theme")) {
+		      setTheme(e.matches ? "dark" : "light");
+		    }
+		  });
+		});
+		</script>
+		<!-- -->
 
 		
 		<!--  ===== Scroll to Top ====  -->
