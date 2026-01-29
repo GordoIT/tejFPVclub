@@ -16,23 +16,27 @@
 	--social-bg: #E5F2FD; /* pasek social mediów */
 }
 
-/* Dark mode */
-body.dark {
-	--bg-main: #121212;
-	--bg-soft: #1e1e1e;
-	--bg-section: #181818;
+/* Auto theme based on system/browser preference */
+@media (prefers-color-scheme: dark) {
 
-	--text-main: #eaeaea;
-	--text-muted: #aaaaaa;
+	/* Dark mode */
+	body.dark {
+		--bg-main: #121212;
+		--bg-soft: #1e1e1e;
+		--bg-section: #181818;
 
-	--border-light: #2a2a2a;
-	--border-dark: #444444;
+		--text-main: #eaeaea;
+		--text-muted: #aaaaaa;
 
-	--btn-bg: #eaeaea;
-	--btn-text: #121212;
+		--border-light: #2a2a2a;
+		--border-dark: #444444;
 
-	--contact-bg: #00A6ED; /* pasek treningów */
-	--social-bg: #7FB800; /* pasek social mediów */
+		--btn-bg: #eaeaea;
+		--btn-text: #121212;
+
+		--contact-bg: #00A6ED; /* pasek treningów */
+		--social-bg: #7FB800; /* pasek social mediów */
+	}
 }
 
 * {
