@@ -43,6 +43,7 @@ https://templatemo.com/tm-587-tiya-golf-club
   --menu-font-size:               16px;
   --btn-font-size:                14px; /*domyslne iconki przyciskow */
   --btn-font-size-socials:                34px; /*domyslne iconki sociali */
+  --btn-font-size-socials-pilots:         17px; /*iconki sociali klubowiczów*/
 
   --border-radius-large:          100px;
   --border-radius-medium:         20px;
@@ -1166,6 +1167,22 @@ strong {
   transition: background 0.2s, color 0.2s;
 }
 
+/*---------- dotyczy klubowiczów --------------*/
+.social-icon-link-pilots {
+  background: var(--secondary-color);
+  border-radius: var(--border-radius-large);
+  color: var(--white-color);
+  font-size: var(--btn-font-size-socials-pilots);
+  display: block;
+  margin-right: 15px;
+  text-align: center;
+  width: 30px;
+  height: 30px;
+  line-height: 31px;
+  transition: background 0.2s, color 0.2s;
+}
+/*---------------------------------------------*/
+
 .social-icon-link:hover {
   background: var(--primary-color);
   color: var(--white-color);
@@ -1298,5 +1315,19 @@ strong {
     font-size: 12px;
     padding: 4px 12px;
   }
+}
+
+
+
+/* ---------- GORDO ------------*/
+
+.treningi {
+  display: inline-block;
+  color: #6A4C93;		/* var(--secondary-color);*/
+  text-decoration: none;
+}
+
+.treningi:hover {
+  color: #000000; 			/*var(--link-hover-color);*/
 }
 
