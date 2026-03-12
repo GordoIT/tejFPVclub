@@ -342,6 +342,87 @@ https://templatemo.com/tm-587-tiya-golf-club
             </section>
 
 
+
+	<!-- Floating support button + Zrzutka widget -->
+	<div id="support-widget">
+
+	  <div id="support-panel">
+	    <iframe 
+	      src="https://zrzutka.pl/kzkw8v/widget/13"
+	      scrolling="no">
+	    </iframe>
+	  </div>
+
+	  <button id="support-button">💸 Zbiórka na budowę<br>megabomba bramki startowej</button>
+
+	</div>
+
+	<style>
+	#support-widget{
+	  position: fixed;
+	  bottom: 20px;
+	  right: 20px;
+	  z-index: 9999;
+	  font-family: sans-serif;
+	}
+
+	#support-button{
+	  background:#8AC926;
+	  color:white;
+	  border:none;
+	  border-radius:30px;
+	  padding:12px 18px;
+	  font-size:14px;
+	  cursor:pointer;
+	  box-shadow:0 4px 12px rgba(0,0,0,0.2);
+	}
+
+	#support-panel{
+	  display:none;
+	  width:320px;
+	  height:420px;
+	  margin-bottom:10px;
+	  border-radius:12px;
+	  overflow:hidden;
+	  box-shadow:0 6px 20px rgba(0,0,0,0.25);
+	  background:white;
+	}
+
+	#support-panel iframe{
+	  width:100%;
+	  height:100%;
+	  border:none;
+	}
+
+	/* mobile */
+	@media (max-width:600px){
+
+	  #support-panel{
+	    width:90vw;
+	    height:420px;
+	  }
+
+	  #support-widget{
+	    right:5vw;
+	  }
+
+	}
+	</style>
+
+	<script>
+	const button = document.getElementById("support-button");
+	const panel = document.getElementById("support-panel");
+
+	button.onclick = () => {
+	  if(panel.style.display === "block"){
+	    panel.style.display = "none";
+	  } else {
+	    panel.style.display = "block";
+	  }
+	}
+	</script>
+
+
         </main>
 
         <footer>
